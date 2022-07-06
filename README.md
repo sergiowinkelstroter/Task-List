@@ -5,8 +5,8 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
--React
--TailwindCSS
+- React
+- TailwindCSS
 
 ## 🌐 Link
 
