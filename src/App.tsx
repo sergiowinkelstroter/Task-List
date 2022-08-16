@@ -17,7 +17,7 @@ function App() {
 
   function deleteTask(index: number) {
     let itensCopy = [...tasks];
-    itensCopy.splice(index);
+    itensCopy.splice(index, 1);
     setTasks(itensCopy);
   }
 
@@ -26,7 +26,7 @@ function App() {
       <div className="md:w-[400px] mt-10 md:border-2 md:border-gray-300 rounded p-3 h-full">
         <AddTask onEnter={handleAddTask} />
         {tasks.map((item, index) => (
-          <ListTasks key={index} item={item} onDelete={deleteTask} />
+          <ListTasks index={index} item={item} onDelete={deleteTask} />
         ))}
       </div>
     </div>
